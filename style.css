@@ -1,3 +1,4 @@
+/* Styles for the body to create a full-screen background with centered content */
 body {
     margin: 0;
     display: flex;
@@ -11,6 +12,7 @@ body {
     overflow: hidden;
 }
 
+/* Styling for the main title */
 h1 {
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -19,6 +21,7 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* Container for the clock elements */
 .clock {
     display: flex;
     flex-wrap: wrap;
@@ -26,12 +29,14 @@ h1 {
     gap: 10px;
 }
 
+/* Styles for each clock section */
 .clock div {
     margin: 5px;
     position: relative;
     text-align: center;
 }
 
+/* Styling for the time display blocks */
 .clock span {
     width: 80px;
     height: 60px;
@@ -46,6 +51,7 @@ h1 {
     border-radius: 5px;
 }
 
+/* Styling for the label under each time block */
 .clock .text {
     height: 25px;
     font-size: 10px;
@@ -58,6 +64,7 @@ h1 {
     padding: 2px 5px;
 }
 
+/* Styles for the AM/PM indicator */
 .clock #ampm {
     bottom: 0;
     position: absolute;
@@ -68,7 +75,7 @@ h1 {
     border-radius: 5px;
 }
 
-/* Responsive Styles */
+/* Responsive styling for smaller screens (max-width: 600px) */
 @media (max-width: 600px) {
     h1 {
         font-size: 12px;
@@ -92,6 +99,7 @@ h1 {
     }
 }
 
+/* Further adjustments for very small screens (max-width: 400px) */
 @media (max-width: 400px) {
     .clock {
         flex-direction: column;
